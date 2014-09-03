@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class AdvancedJavaCourse {
+public class AdvancedJavaCourse implements ProgrammingCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -18,11 +18,13 @@ public class AdvancedJavaCourse {
         this.setCourseName(courseName);
         this.setCourseNumber(courseNumber);
     }
-
+    
+    @Override
     public String getCourseNumber() {
         return courseNumber;
     }
-
+    
+    @Override
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -32,10 +34,12 @@ public class AdvancedJavaCourse {
         this.courseNumber = courseNumber;
     }
 
+    @Override
     public double getCredits() {
         return credits;
     }
 
+    @Override
     public void setCredits(double credits) {
         if(credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
@@ -58,10 +62,12 @@ public class AdvancedJavaCourse {
         this.prerequisites = prerequisites;
     }
 
+    @Override
     public String getCourseName() {
         return courseName;
     }
 
+    @Override
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,

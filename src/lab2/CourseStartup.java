@@ -4,7 +4,12 @@
  * and open the template in the editor.
  */
 
-package lab1;
+package lab2;
+
+import lab1.AdvancedJavaCourse;
+import lab1.IntroJavaCourse;
+import lab1.IntroToProgrammingCourse;
+import lab1.ProgrammingCourse;
 
 
 
@@ -18,8 +23,8 @@ public class CourseStartup {
         AdvancedJavaCourse java2 = new AdvancedJavaCourse("Advanced Java", "2031-2495");
         IntroJavaCourse java1 = new IntroJavaCourse("Intro to Java", "4568-1564");
         
-        //I used the Liskov Substitution principle here, In this particular case I don't see it being very versitile, however if we were
-        //to create an array of all the courses it would be very usefull then.
+        //The interface in this case wasn't as useful as the abstract class was, however, perhaps if I coupled the interface with an abstract class, there
+        //would be much more code re-use. I'm also not sure how the substitution principal would work here, since every class just implements the interface.
         ProgrammingCourse introProgramming = new IntroToProgrammingCourse("Intro to Programming", "1324-4658");
         
         java2.setPrerequisites("Intro to Java");
