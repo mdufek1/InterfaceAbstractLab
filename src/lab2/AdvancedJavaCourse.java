@@ -19,6 +19,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }
     
+    
     @Override
     public String getCourseNumber() {
         return courseNumber;

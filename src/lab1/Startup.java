@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab2;
+package lab1;
 /**
  *
  * @author Mike
  */
-public class CourseStartup {
+public class Startup {
     public static void main(String[] args) {
         
         AdvancedJavaCourse java2 = new AdvancedJavaCourse("Advanced Java", "2031-2495");
